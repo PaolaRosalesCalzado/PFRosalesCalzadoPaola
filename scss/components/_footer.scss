@@ -1,0 +1,25 @@
+.fa-instagram {
+	color: $color_3;
+	font-size: 26px;
+	margin-right: 5px;
+}
+.fa-whatsapp {
+	color: $color_4;
+	font-size: 26px;
+	margin-right: 5px;
+}
+.fa-facebook {
+	color: $color_5;
+	font-size: 26px;
+}
+footer {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+	background-color: $background-color_1;
+	color: $color_1;
+	padding: 8px;
+	font-size: 80%;
+}

@@ -1,0 +1,305 @@
+
+@media (max-width:992px) {
+	.col-lg-8 {
+		text-align: center;
+	}
+	.servicio-izquierda {
+		p {
+			font-size: 13px;
+		}
+	}
+	ul {
+		font-size: 13px;
+	}
+}
+@media (max-width:900px) {
+	.contacto {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		text-align: center;
+		.informacion {
+			h1 {
+				padding-top: 50px;
+				padding-bottom: 15px;
+			}
+		}
+	}
+}
+@media (max-width:880px) {
+	.servicio-izquierda {
+		ul {
+			margin-bottom: 25px;
+		}
+	}
+}
+@media (max-width:830px) {
+	.servicio-izquierda {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		img {
+			padding: 25px 0;
+			width: 250px;
+		}
+		ul {
+			margin-bottom: 0px;
+		}
+	}
+	.boton {
+		display: flex;
+		margin-bottom: 0;
+		margin-right: 15px;
+		color: $color_1;
+		font-size: 20px;
+	}
+	header {
+		nav {
+			ul {
+				flex-basis: 100%;
+				flex-grow: 1;
+				flex-direction: column;
+				transition: height 0ms 1s, opacity 1s 0ms;
+				height: 0;
+				overflow: hidden;
+				opacity: 0;
+				li {
+					flex-basis: 100%;
+					flex-grow: 1;
+					flex-direction: column;
+					line-height: 27px;
+					padding-bottom: 13px;
+					width: 100%;
+					a {
+						display: block;
+						width: 100%;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+	#check {
+		&:checked~ul {
+			height: auto;
+			opacity: 1;
+			animation: fade_in_show 1s;
+		}
+	}
+}
+@media (max-width:768px) {
+	.carousel {
+		display: block;
+		img {
+			height: 60vh;
+		}
+	}
+	.salon {
+		.imagenes {
+			display: none;
+		}
+	}
+	.fondo {
+		div {
+			h1 {
+				font-size: 23px;
+			}
+		}
+	}
+	.gallery {
+		p {
+			width: 90%;
+		}
+	}
+}
+@media (max-width:730px) {
+	.servicio-izquierda {
+		margin: 20px 50px;
+	}
+}
+@media (max-width:630px) {
+	.servicios-titulo {
+		h1 {
+			width: 80%;
+			margin: auto;
+		}
+	}
+}
+@media (max-width:580px) {
+	.sobrenosotros {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		div {
+			margin-top: 15px;
+			margin-left: 0;
+			p {
+				width: 90%;
+				margin: 10px auto;
+				margin-bottom: 25px;
+				font-size: 14px;
+				text-align: center;
+			}
+		}
+		img {
+			margin-top: 25px;
+		}
+	}
+	.salon {
+		div {
+			p {
+				font-size: 12px;
+				width: 90%;
+				margin: auto;
+				margin-top: 13px;
+			}
+		}
+	}
+	.reserva {
+		h2 {
+			font-size: 20px;
+		}
+	}
+	.formulario {
+		.contenido-form {
+			p {
+				text-align: center;
+				font-size: 13px;
+			}
+		}
+	}
+}
+@media (max-width:520px) {
+	.carousel {
+		img {
+			height: 50vh;
+		}
+	}
+	footer {
+		flex-direction: column;
+		font-size: 10px;
+		div {
+			margin: 0 auto;
+		}
+		span {
+			margin: 0 auto;
+		}
+	}
+	body {
+		.ir-arriba {
+			bottom: 1px;
+			right: 1px;
+		}
+		.fijo {
+			img {
+				width: 50px;
+			}
+		}
+	}
+	.sobrenosotros {
+		div {
+			h3 {
+				width: 90%;
+				margin: 10px auto;
+				font-size: 25px;
+			}
+			p {
+				width: 90%;
+				margin: 10px auto;
+				font-size: 13px;
+				margin-bottom: 25px;
+			}
+		}
+	}
+	.servicios {
+		h3 {
+			font-size: 25px;
+		}
+	}
+	.contacto {
+		.informacion {
+			width: 80%;
+		}
+	}
+}
+@media (max-width:450px) {
+	.servicios-fila {
+		flex-direction: column;
+		align-content: center;
+	}
+	.servicios {
+		.item {
+			width: 70%;
+		}
+		.servicios-fila {
+			h4 {
+				font-size: 27px;
+			}
+			a {
+				font-size: 20px;
+			}
+		}
+	}
+	.servicio-izquierda {
+		h2 {
+			font-size: 25px;
+			color: $color_7;
+			text-align: center;
+		}
+		p {
+			font-size: 12px;
+		}
+		margin: 20px 30px;
+	}
+	ul {
+		font-size: 12px;
+	}
+	.servicios-titulo {
+		h1 {
+			width: 80%;
+			margin: auto;
+			font-size: 31px;
+		}
+	}
+	.somos-expertos {
+		h2 {
+			width: 70%;
+			margin: auto;
+		}
+	}
+	.promociones {
+		h1 {
+			font-size: 25px;
+		}
+	}
+}
+@media screen and (max-width:400px) {
+	.galeria-imagenes {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+	.close {
+		top: 20px;
+		right: 20px;
+	}
+}
+@media (max-width:400px) {
+	.reserva {
+		h2 {
+			font-size: 18px;
+			padding: 5px 0px;
+			text-align: center;
+		}
+	}
+	.contenido-form {
+		button {
+			font-size: 16px;
+		}
+	}
+	.servicio-izquierda {
+		img {
+			width: 200px;
+		}
+	}
+}
