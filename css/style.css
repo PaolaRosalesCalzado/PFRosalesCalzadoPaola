@@ -275,13 +275,12 @@ header {
     background-color: black;
     border: 1px solid white;
     padding: 5px;
+    margin:auto;
+    margin-top:10px;
+    display: block;
     border-radius: 3px;
-    margin: auto;
-    margin-top: 20px;
-    margin-left: 50%;
     font-size: 100%;
-    color: white;
-    text-align: start; }
+    color: white;}
   .formulario textarea {
     border: none;
     border-radius: 5px; }
@@ -312,19 +311,32 @@ header {
   margin: 20px 120px;
   display: flex;
   box-shadow: 0 4px 8px 0 #00000020, 0 6px 20px 0 #00000019; }
-  .servicio-izquierda div {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px; }
   .servicio-izquierda ul {
-    margin-left: 20px;
-    margin-bottom: 30px; }
+    margin-left: 20px;}
+  .servicio-izquierda .tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100% - 44px);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 13px;
+  }
   .servicio-izquierda h2 {
-    margin-bottom: 20px; }
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 20px;
+    background-color: #851919;
+    color:#FFF; }
   .servicio-izquierda p {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-align: justify; }
   .servicio-izquierda img {
-    width: 30%; }
+    width: 186px;
+    height: 300px; }
 
 .galeria {
   box-sizing: border-box; }
@@ -350,7 +362,7 @@ header {
   display: block; }
 
 .somos-expertos {
-  background-color: rgba(232, 221, 221, 0.76);
+  background: linear-gradient(to right, white, pink, 15%, rgba(232, 221, 221, 0.76));
   font-size: 20px;
   color: black;
   text-align: center;
@@ -363,7 +375,7 @@ header {
     width: 60%;
     margin: auto; }
   .somos-expertos h2 {
-    color: rgba(158, 156, 156, 0.88);
+    color: black;
     font-family: "Secular One";
     -webkit-text-stroke: 1px brown; }
 
@@ -373,7 +385,8 @@ header {
   margin: auto;
   grid-gap: 50px;
   overflow: hidden;
-  background-color: rgba(232, 221, 221, 0.76); }
+  padding: 35px;
+  background: linear-gradient(to right, white,  pink, 15%, rgba(232, 221, 221, 0.76)); }
   .galeria-imagenes img {
     width: 100%;
     vertical-align: top;
@@ -385,7 +398,7 @@ header {
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); }
-  .galeria-imagenes a:hover img {
+  .galeria-imagenes a:hover {
     animation: move 0.9s ease-in-out alternate; }
 
 .light-box {
@@ -473,7 +486,7 @@ header {
 .promociones img {
   width: 100%;
   height: 40vh;
-  object-fit: cover; }
+  object-fit:cover; }
 
 .ofertas h3 {
   text-align: center;
@@ -494,22 +507,22 @@ header {
 .contacto {
   align-items: center;
   height: 100vh;
-  background-image: linear-gradient(#ffffff80, #ffffff80), url("../img/contacto.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
+  background: linear-gradient(to right,  white, rgba(232, 221, 221, 0.76), 50%, pink);}
   .contacto .informacion {
     display: flex;
     flex-direction: column; }
+  .contacto .mapa{
+    margin-top:20px;
+  }
   .contacto h1 {
     font-size: 35px;
-    color: brown;
+    color: black;
+    font-family: 'Noto serif';
     text-align: start; }
   .contacto h3 {
     padding-top: 15px;
     font-size: 130%;
-    color: brown;
+    color: black;
     text-align: start; }
   .contacto div span {
     font-size: 90%;
@@ -554,15 +567,15 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    text-align: center; }
+    height: 100%; }
     .contacto .informacion h1 {
       padding-top: 50px;
-      padding-bottom: 15px; } }
-
-@media (max-width: 880px) {
-  .servicio-izquierda ul {
-    margin-bottom: 25px; } }
+      padding-bottom: 15px;
+      text-align: center; }
+    .contacto .informacion h3 {
+      text-align: center; }
+    .contacto .informacion span {
+      text-align: center; } }
 
 @media (max-width: 830px) {
   .servicio-izquierda {
@@ -570,8 +583,7 @@ footer {
     justify-content: center;
     align-items: center; }
     .servicio-izquierda img {
-      padding: 25px 0;
-      width: 250px; }
+      display:none }
     .servicio-izquierda ul {
       margin-bottom: 0px; }
   .boton {
@@ -694,10 +706,6 @@ footer {
     font-size: 20px; }
   .servicio-izquierda {
     margin: 20px 30px; }
-    .servicio-izquierda h2 {
-      font-size: 25px;
-      color: brown;
-      text-align: center; }
     .servicio-izquierda p {
       font-size: 12px; }
   ul {
